@@ -30,6 +30,52 @@ https://www.youtube.com/watch?v=Jbt5bEgv_QM
 ## LAMP Setup
 https://www.tecmint.com/install-lamp-with-phpmyadmin-in-ubuntu-20-04/
 
+## STEP to follow
+
+apt update
+sudo apt install apache2 -y
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+sudo systemctl is-enabled apache2
+
+
+sudo apt install mariadb-server mariadb-client -y
+
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+sudo systemctl status mariadb
+sudo systemctl is-enabled mariadb
+
+sudo mysql_secure_installation
+
+
+sudo apt install php libapache2-mod-php php-mysql -y
+
+
+apt install composer
+composer update
+
+rename .env.example to .env
+configure database in .env file
+
+create a new database with name : employees_db
+create a new table with : php artisan migrate
+create a default user with system with : php artisan db:seed
+
+php artisan key:generate
+Execute: php artisan config:clear
+Execute: php artisan serve --host 0.0.0.0
+
+DONE
+
+
+
+
+CREATE USER 'test'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGE ON *.* TO 'test'@'%';
+
 ## Hotfix Videos
 https://www.youtube.com/watch?v=bDmmKOdgIeY
 
