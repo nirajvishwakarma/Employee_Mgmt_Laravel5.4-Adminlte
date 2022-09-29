@@ -71,8 +71,6 @@ Execute: php artisan serve --host 0.0.0.0
 DONE
 
 
-
-
 CREATE USER 'test'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGE ON *.* TO 'test'@'%';
 
