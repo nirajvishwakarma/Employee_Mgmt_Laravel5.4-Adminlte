@@ -27,6 +27,9 @@
 ## Guide Video
 https://www.youtube.com/watch?v=Jbt5bEgv_QM
 
+## LAMP Setup
+https://www.tecmint.com/install-lamp-with-phpmyadmin-in-ubuntu-20-04/
+
 ## Hotfix Videos
 https://www.youtube.com/watch?v=bDmmKOdgIeY
 
